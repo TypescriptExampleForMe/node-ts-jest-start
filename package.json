@@ -8,7 +8,8 @@
     "dev": "tsx ./src/index.ts",
     "build": "rimraf dist && tsc",
     "start": "npm run build && node ./dist/index.js",
-    "test": "jest --watchAll --verbose"
+    "test": "jest --coverage --watchAll --verbose",
+    "test-callback": "jest asyncTesting.spec.ts"
   },
   "keywords": [],
   "author": "",
